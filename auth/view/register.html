@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Register | التسجيل</title>
+
+    <!-- Favicons -->
+    <link href="../../res/img/logo-rehla.png" rel="icon">
+    <link href="../../res/img/logo-rehla.png" rel="apple-touch-icon">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../../assets/css/auth.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        /* Fonts */
+        @font-face {
+            font-family: GESbold;
+            src: url("../../res/font/Bold.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: GESmedium;
+            src: url("../../res/font/Medium.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: GESlight;
+            src: url("../../res/font/Light.otf") format("opentype");
+        }
+    </style>
+</head>
+
+<body style="background: #ab7f557e;">
+
+    <div class="container w3-animate-top" style="margin-top: 2%;">
+        <div class="sign-up-content">
+            <form action="../config/register.php" method="POST" class="signup-form">
+                <h2 class="form-title" style="font-family: GESbold;color: #DDA633;">التسجيل</h2>
+                <p style="font-family: GESmedium;">نوع الإشتراك:</p>
+                <div class="form-radio" style="text-align: center;display: flex;">
+                    <input type="radio" name="member_level" value="1" id="C" class="radio" style="width: 30%;"
+                        required />
+                    <label for="C" style="font-family: GESmedium;">مؤسسة تعليمية</label>
+
+                    <input type="radio" name="member_level" value="2" id="T" class="radio" style="width: 30%;" />
+                    <label for="T" style="font-family: GESmedium;">مدرس خاص</label>
+
+                    <input type="radio" name="member_level" value="3" id="S" class="radio" style="width: 30%;" />
+                    <label for="S" style="font-family: GESmedium;">طالب أكاديمي</label>
+                </div>
+
+                <div class="form-textbox">
+                    <input type="text" name="name" id="name" placeholder="اسم الكريم" style="font-family: GESlight;"
+                        required />
+                </div>
+
+                <div class="form-textbox">
+                    <input type="email" name="email" id="email" placeholder="البريد الإلكتروني"
+                        style="font-family: GESlight;" required />
+                </div>
+
+                <div class="form-textbox">
+                    <input type="password" name="pass" id="pass" placeholder="كلمة المرور"
+                        style="font-family: GESlight;" required />
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" name="agree-term" id="agree-term" required />
+                    <label for="agree-term" class="label-agree-term"
+                        style="font-family: GESbold;">أوافق على جميع البيانات الواردة في
+                        <a href="#" class="term-service">الشروط والأحكام</a></label>
+                </div>
+
+                <div class="form-textbox">
+                    <input type="submit" name="submit" id="submit" class="submit" value="انشاء الحساب" />
+                </div>
+            </form>
+            <p class="loginhere" style="font-family: GESbold;">
+                لديك حساب بالفعل ؟ <a href="login.html" class="loginhere-link" style="font-family: GESbold;">سجل الدخول الآن</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

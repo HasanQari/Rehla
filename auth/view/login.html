@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Register | التسجيل</title>
+
+    <!-- Favicons -->
+    <link href="../../res/img/logo-rehla.png" rel="icon">
+    <link href="../../res/img/logo-rehla.png" rel="apple-touch-icon">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../../assets/css/auth.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        /* Fonts */
+        @font-face {
+            font-family: GESbold;
+            src: url("../../res/font/Bold.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: GESmedium;
+            src: url("../../res/font/Medium.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: GESlight;
+            src: url("../../res/font/Light.otf") format("opentype");
+        }
+    </style>
+</head>
+
+<body style="background: #ab7f557e;">
+
+    <div class="container w3-animate-top" style="margin-top: 2%;">
+        <div class="sign-up-content">
+            <form action="../config/login.php" method="POST" class="signup-form">
+                <h2 class="form-title" style="font-family: GESbold;color: #DDA633;">تسجيل الدخول</h2>
+
+
+                <div class="form-textbox">
+                    <input type="email" name="email" id="email" placeholder="البريد الإلكتروني"
+                        style="font-family: GESlight;height: 50px;border: 1px solid #999;border-radius: 10px;margin: 5px 0;"
+                        required />
+                </div>
+
+                <div class="form-textbox">
+                    <input type="password" name="pass" id="pass" placeholder="كلمة المرور"
+                        style="font-family: GESlight;border: 1px solid #999;border-radius: 10px; margin: 5px 0;" 
+                        required />
+                </div>
+
+                <div class="form-textbox">
+                    <input type="submit" name="submit" id="submit" class="submit" value="الدخول للحساب" />
+                </div>
+            </form>
+            <p class="loginhere" style="font-family: GESbold;">
+                لاتملك حساب بالفعل ؟ <a href="register.html" class="loginhere-link" style="font-family: GESbold;">سجل
+                    الآن</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
